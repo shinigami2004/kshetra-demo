@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f27">
+  <meta name="description" content="Kshetra is a concept farm operations platform that connects AI recommendations, owner approval, field work, and verification.">
+  <title>Kshetra — From farm decisions to verified work</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Kshetra home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Kshetra</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#demo">Live demo</a>
+        <a href="#why-kshetra">Why Kshetra</a>
+        <a class="nav-cta" href="#demo">Explore prototype</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> FARM OPERATIONS, REIMAGINED</div>
+          <h1>Every plot needs attention.<br><em>You need clarity.</em></h1>
+          <p>Kshetra brings field signals, AI recommendations, owner approval and proof of work into one simple farm operations flow.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#demo">Try the interactive demo</a><a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-note"><span class="note-dot"></span> Concept prototype · illustrative farm data · no live devices connected</div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of three farm plots with field readings and task status">
+          <div class="visual-top"><span>FIELD VIEW</span><span>SEASON 2026</span></div>
+          <div class="field-illustration"><div class="field-grid"><div class="plot-art plot-a"><span>PLOT 01</span><strong>Grapes</strong></div><div class="plot-art plot-b"><span>PLOT 02</span><strong>Pomegranate</strong></div><div class="plot-art plot-c"><span>PLOT 03</span><strong>Vegetables</strong></div></div><div class="field-orbit orbit-one"></div><div class="field-orbit orbit-two"></div></div>
+          <div class="visual-bottom"><div><span class="mini-label">NEXT RECOMMENDATION</span><strong>Review irrigation on Plot 01</strong></div><span class="visual-status">Needs approval</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Product principles"><div class="container proof-grid"><div><span class="proof-icon">01</span><span>See what needs doing</span></div><div><span class="proof-icon">02</span><span>Approve before action</span></div><div><span class="proof-icon">03</span><span>Check what happened</span></div></div></section>
+
+    <section class="section intro" id="how-it-works">
+      <div class="container"><div class="section-heading"><div><span class="kicker">THE IDEA</span><h2>From recommendation<br>to a recorded outcome.</h2></div><p>A farmer should be able to understand why work is proposed, stay in control of the decision, and see evidence after the task. Kshetra connects these moments.</p></div>
+        <div class="steps"><article class="step"><span class="step-index">01 / SENSE</span><div class="step-symbol sensor-symbol" aria-hidden="true"></div><h3>Read the field</h3><p>Bring available soil, pump, weather and farm records into a plot-level view.</p></article><article class="step"><span class="step-index">02 / DECIDE</span><div class="step-symbol decision-symbol" aria-hidden="true"></div><h3>Suggest the next task</h3><p>AI proposes timing and flags exceptions. Safety rules and the owner decide what can happen.</p></article><article class="step"><span class="step-index">03 / VERIFY</span><div class="step-symbol verify-symbol" aria-hidden="true"></div><h3>Close the loop</h3><p>Track execution, proof, failures and cost in an action ledger the owner can review.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container"><div class="demo-heading"><div><span class="kicker kicker-light">INTERACTIVE PRODUCT PREVIEW</span><h2>Step inside the farm.</h2><p>Choose a situation, inspect Kshetra’s proposal and decide what happens next. This walkthrough uses illustrative values.</p></div><div class="demo-badge"><span class="pulse-dot"></span> DEMO MODE</div></div>
+        <div class="demo-shell">
+          <aside class="demo-sidebar"><div class="demo-brand"><span class="brand-mark small" aria-hidden="true"><span></span><span></span><span></span></span>Kshetra <small>Farm workspace</small></div><div class="sidebar-label">YOUR FARM</div><div class="farm-selector"><span class="farm-icon" aria-hidden="true">▦</span><span>Green Valley Farm<small>3 managed plots</small></span><span aria-hidden="true">⌄</span></div><div class="sidebar-label">EXPLORE SCENARIOS</div><div class="scenario-list" role="group" aria-label="Demo scenarios"><button class="scenario active" type="button" data-scenario="irrigation"><span class="scenario-icon">◉</span><span>Irrigation due<small>Plot 01 · Grapes</small></span></button><button class="scenario" type="button" data-scenario="pressure"><span class="scenario-icon">≈</span><span>Pressure drop<small>Plot 02 · Pomegranate</small></span></button><button class="scenario" type="button" data-scenario="crew"><span class="scenario-icon">✓</span><span>Crew check-in<small>Plot 03 · Vegetables</small></span></button></div><div class="sidebar-bottom"><span class="demo-disclaimer">All plots, readings and events shown here are demo data.</span></div></aside>
+          <div class="workspace"><div class="workspace-top"><div><span class="workspace-eyebrow">FARM OVERVIEW</span><h3>Good morning, farm manager.</h3><p>Here is the next decision on your farm.</p></div><button id="reset-demo" class="reset-button" type="button">Reset demo</button></div><div class="workspace-stats"><div><span>MANAGED PLOTS</span><strong>03</strong><small>Demo farm</small></div><div><span>OPEN DECISIONS</span><strong id="open-count">01</strong><small>Owner approval</small></div><div><span>TASK STATUS</span><strong id="top-status">Review</strong><small id="top-status-note">Action proposed</small></div></div>
+            <div class="workspace-main"><div class="plot-card"><div class="card-heading"><div><span class="micro-label">PLOT MAP</span><h4>Field overview</h4></div><span class="map-legend"><i></i> Selected plot</span></div><div class="map-grid"><button class="map-plot selected" data-map="irrigation" type="button"><span>PLOT 01</span><strong>Grapes</strong><small>Drip irrigation</small></button><button class="map-plot" data-map="pressure" type="button"><span>PLOT 02</span><strong>Pomegranate</strong><small>Drip irrigation</small></button><button class="map-plot" data-map="crew" type="button"><span>PLOT 03</span><strong>Vegetables</strong><small>Crew managed</small></button></div><div class="map-note"><span class="map-note-icon">i</span><span id="plot-detail">Plot 01 · Grapes · Drip irrigation</span></div></div>
+              <div class="decision-card"><div class="card-heading"><div><span class="micro-label">NEXT ACTION</span><h4 id="action-title">Irrigation review</h4></div><span id="action-chip" class="status-chip">Approval needed</span></div><p id="action-reason" class="action-reason">The demo forecast and soil reading suggest reviewing a short irrigation run.</p><div class="action-meta"><div><span>RECOMMENDED TASK</span><strong id="action-task">Run drip irrigation</strong></div><div><span>ESTIMATED FEE</span><strong id="action-fee">Shown before approval</strong></div></div><div class="decision-actions"><button id="approve-button" class="button button-action" type="button">Approve task</button><button id="review-button" class="button button-outline" type="button">View reasoning</button></div><div id="reasoning" class="reasoning" hidden><strong>Why this suggestion?</strong><p id="reasoning-copy">This example combines a low soil-moisture reading, the next-day forecast and the plot’s task history. A real deployment would require calibrated field data and agronomic validation.</p></div><div id="decision-message" class="decision-message" role="status" aria-live="polite"></div></div></div>
+            <div class="ledger"><div class="card-heading"><div><span class="micro-label">ACTION LEDGER</span><h4>What happened after approval</h4></div><span class="ledger-count" id="ledger-count">1 demo entry</span></div><div id="ledger-list" class="ledger-list"><div class="ledger-row"><span class="ledger-bullet waiting"></span><div><strong>Irrigation review proposed</strong><small>Plot 01 · Awaiting owner decision</small></div><span class="ledger-state">Open</span></div></div></div>
+          </div>
+        </div><p class="under-demo">Demo actions run only in this browser. They do not operate equipment, contact workers or create a real charge.</p>
+      </div>
+    </section>
+
+    <section class="section value-section" id="why-kshetra"><div class="container value-grid"><div><span class="kicker">WHY THIS APPROACH</span><h2>Control belongs<br>with the farmer.</h2><p>Kshetra starts with recommendations and owner-approved work. An action is useful only when the owner can understand it, stop it and see what took place in the field.</p><a class="text-link dark" href="#demo">Explore the decision flow <span aria-hidden="true">↗</span></a></div><div class="value-list"><div><span>01</span><div><h3>Approval before execution</h3><p>Plot rules and owner permission stand between a recommendation and an external action.</p></div></div><div><span>02</span><div><h3>Exceptions stay visible</h3><p>Power loss, missing proof or an incomplete task should surface for review, not disappear into a success message.</p></div></div><div><span>03</span><div><h3>Pay for verified work</h3><p>The proposed per-action fee applies to work that meets an agreed proof rule. A spending cap can keep the seasonal bill predictable.</p></div></div></div></div></section>
+
+    <section class="roadmap-section"><div class="container roadmap-grid"><div><span class="kicker kicker-light">START NARROW, GROW WITH PROOF</span><h2>One reliable workflow first.</h2></div><div class="roadmap-items"><div><span class="roadmap-tag current">FIRST PRODUCT</span><h3>Verified irrigation tasks</h3><p>Proposals, approval, execution or crew coordination, exceptions and an action ledger.</p></div><div><span class="roadmap-tag">FUTURE CONCEPT</span><h3>Kshetra Supply</h3><p>Equipment monitoring and doorstep access to farm materials are later concepts, after the core workflow is validated.</p></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Kshetra</span></a><p>From farm decisions to verified work.</p></div><div><strong>Business of AI · Team 12</strong><span>Vishesh Chauhan · Jagjot Singh · Mandeep Singh Pruthi</span><span>Concept prototype for academic demonstration</span></div></div></footer>
+</body>
+</html>
